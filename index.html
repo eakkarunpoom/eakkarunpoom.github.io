@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top">
+        <div class="input">
+            <div class="block">
+                <div class="title">
+                    <h1 style="color:#f1bb44"><>HTML :</h1>
+                </div>
+                <textarea id="html" onkeyup="displayResult()"></textarea>
+            </div>
+            <div class="block">
+                <div class="title">
+                    <h1 style="color:#44b4f1">#CSS :</h1>
+                </div>
+                <textarea id="css" onkeyup="displayResult()"></textarea>
+            </div>
+            <div class="block">
+                <div class="title">
+                    <h1 style="color:#e0f70d">Javascript :</h1>
+                </div>
+                <textarea id="javascript" onkeyup="displayResult()"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="output">
+            <div class="title">
+                <h1>Result :</h1>
+            </div>
+            <iframe id="result"></iframe>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
